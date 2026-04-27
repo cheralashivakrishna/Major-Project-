@@ -87,14 +87,23 @@ CULane (by manideep1108)
 
 ### 4️⃣ Download Pretrained Model
 
-Add this cell at the top:
+Download the best trained model from Google Drive:
 
+🔗 [https://drive.google.com/file/d/1q_Dy65wK_WE7m6b1S9Y8DkmJqYGFX_NX/view?usp=sharing](https://drive.google.com/file/d/1q_Dy65wK_WE7m6b1S9Y8DkmJqYGFX_NX/view?usp=sharing)
+
+Or use the following command inside the notebook:
+
+````python
+!pip install -q gdown
+
+!gdown --id 1q_Dy65wK_WE7m6b1S9Y8DkmJqYGFX_NX \
+       -O /kaggle/working/lstr_checkpoint_latest.pth
 ```python
 !pip install -q gdown
 
 !gdown --id 1q_Dy65wK_WE7m6b1S9Y8DkmJqYGFX_NX \\
        -O /kaggle/working/lstr_checkpoint_latest.pth
-```
+````
 
 ---
 
@@ -188,4 +197,4 @@ model.eval()
 
 ## 📄 License
 
-This project is for academic and research purpo
+This project is for academic and research purposes.
